@@ -1,0 +1,361 @@
+/* Base styles for mobile-first approach */
+body,
+html {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 16px;
+}
+
+.navbar .logo img {
+    max-width: 100px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 8px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    background-color: black;
+    /* Optional: background for text readability */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    margin: 32px 0;
+}
+
+.gallery .grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .grid-item p {
+    margin: 8px 0;
+    text-align: center;
+}
+
+.contact-info .image img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-info .contact h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Carousel Styles */
+.carousel {
+    background-color: gray;
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media Query for Tablet: min-width 768px */
+@media (min-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .grid {
+        max-width: 768px;
+        margin: 0 auto;
+        grid-template-columns: repeat(12, 1fr);
+        /* 12 columns for tablet */
+        gap: 20px;
+    }
+
+    .gallery .grid-item {
+        grid-column: span 4;
+    }
+
+    .contact-info .image {
+        grid-column: span 6;
+        /* 6 columns for image */
+    }
+
+    .contact-info .contact {
+        grid-column: span 6;
+        /* 6 columns for contact */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* Media Query for Desktop: 1280px and up */
+@media (min-width: 1280px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .grid {
+        max-width: 1280px;
+        margin: 0 auto;
+        gap: 16px;
+        grid-template-columns: repeat(12, 1fr);
+        /* 12 columns for tablet */
+    }
+
+    .gallery .grid-item {
+        grid-column: span 4;
+    }
+
+    .contact-info .image {
+        grid-column: span 6;
+        /* 6 columns for image */
+    }
+
+    .contact-info .contact {
+        grid-column: span 6;
+        /* 6 columns for contact */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .location-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+        background-color: lightslategray;
+        text-align: center;
+    }
+
+    .location-info .contact {
+        max-width: 800px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba (0,0,0,0.1);
+    }
+
+    .location-info .contact h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+
+    .location-info .contact p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+}
+
+/* Mobile First (default layout) */
+@media (max-width: 767px) {
+    .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        background-color: black;
+        padding: 20px 10px;
+    }
+
+    .navbar nav ul li a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar nav ul.active {
+        display: flex;
+        z-index: 999;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .grid {
+        max-width: 320px;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        /* 12 columns for tablet */
+        gap: 16px;
+    }
+
+    .gallery .grid-item {
+        grid-column: span 4;
+    }
+
+    .contact-info .image {
+        grid-column: span 4;
+        /* Map on top */
+    }
+
+    .contact-info .contact {
+        grid-column: span 4;
+        /* Contact below map */
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+}
+
+/*Form Validation*/
+@import url("https://fonts.googleapis.com/css?family=Arial");
+
+/* Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+  }
+  
+  .container {
+    width: 500px;
+    margin: 35px auto;
+  }
+  
+  .title {
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    padding: 30px;
+    background: black;
+    color: white;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  form label,
+  form input,
+  form button {
+    border: 0;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+  }
+
+  form input {
+    height: 25px;
+    line-height: 25px;
+    background: white;
+    color: black;
+    padding: 0 6px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    height: 30px;
+    line-height: 30px;
+    background: gold;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+
+  form .error {
+    color: red;
+  }
+
+ 
+/* Customize the Modal. Style the modal content */
+  .modal {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+
+
+
+
+
+

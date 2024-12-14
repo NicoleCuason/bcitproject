@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/SouthKorea.jpg" alt="South Korea" />
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>            
+    </header>
+
+    <main class="content">
+        <section class="grid gallery">
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-1" rel="modal:open">
+                <img src="images/kimbap.jpg" alt="kimbap" style="width: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-1" class="modal">
+                <h2><strong>KIMBAP</strong></h2>
+                <p>a popular Korean dish made with steamed rice, vegetables, meat (such as beef, egg, or fish), and pickled ingredients, all wrapped in a sheet of nori (seaweed)</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-2" rel="modal:open">
+                <img src="images/sundubu-jigae.jpg" alt="sundubu-jigae" style="width: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-2" class="modal">
+                <h2><strong>SUNDUBU-JIGAE</strong></h2>
+                <p>a Korean stew made with soft silken tofu, vegetables, garlic, gochujang (Korean chili paste), and optional meat or seafood, often served with a raw egg added just before serving.</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                 <!--Clickable Image-->
+                 <a href="#image-modal-3" rel="modal:open">
+                <img src="images/pajeon.jpg" alt="pajeon" style="width: 400px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-3" class="modal">
+                <h2><strong>PAJEON</strong></h2>
+                <p>a savory Korean pancake made with a simple batter of flour, water, and egg, mixed with scallions (green onions), and often includes vegetables, seafood, or meat</p>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                 <!--Clickable Image-->
+                 <a href="#image-modal-4" rel="modal:open">
+                <img src="images/bulgogi.jpg" alt="bulgogi" style="width: 300px; height: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-4" class="modal">
+                <h2><strong>BULGOGI</strong></h2>
+                <p>a popular Korean dish made with thinly sliced beef, marinated in a sweet and savory mixture of soy sauce, sesame oil, garlic, sugar, and pepper</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-5" rel="modal:open">
+               <img src="images/japchae.jpg" alt="japchae" style="width: 300px; height: 300px; cursor: pointer;"/>
+               </a>
+               <!--Modal Content-->
+               <div id="image-modal-5" class="modal">
+               <h2><strong>JAPCHAE</strong></h2>
+               <p>a Korean stir-fried dish made with sweet potato starch noodles (dangmyeon), mixed with sautéed vegetables like spinach, carrots, mushrooms, and onions, and often accompanied by thinly sliced beef or other proteins</p>
+               </div>
+           </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-6" rel="modal:open">
+                <img src="images/bibimbap.jpg" alt="bibimbap" style="width: 400px; height: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-6" class="modal">
+                <h2><strong>BIBIMBAP</strong></h2>
+                <p>a traditional Korean dish consisting of a bowl of steamed rice topped with a variety of sautéed and seasoned vegetables (such as spinach, carrots, zucchini, and mushrooms), a fried egg, and often gochujang (Korean chili paste) for flavor</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-7" rel="modal:open">
+                <img src="images/chickenstew.jpg" alt="chickenstew" style="width: 300px; height: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-7" class="modal">
+                <h2><strong>DAKBOKKEUMTANG</strong></h2>
+                <p>a hearty and flavorful dish made with chicken, potatoes, carrots, onions, and sometimes other vegetables, all simmered in a spicy and savory broth</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-8" rel="modal:open">
+                <img src="images/kimchirice.jpg" alt="kimchirice" style="width: 300px; height: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-8" class="modal">
+                <h2><strong>KIMCHI BOKKEUMBAP</strong></h2>
+                <p>a popular Korean comfort food made by stir-frying cooked rice with kimchi, vegetables, and sometimes meat (like pork or beef)</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-9" rel="modal:open">
+                <img src="images/samgyupsal.jpg" alt="samgyupsal" style="width: 400px; height: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-9" class="modal">
+                <h2><strong>SAMGYUPSAL</strong></h2>
+                <p>a popular Korean dish consisting of thick slices of pork belly that are grilled at the table</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-10" rel="modal:open">
+                <img src="images/friedchicken.jpg" alt="friedchicken" style="width: 300px; height: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-10" class="modal">
+                <h2><strong>YANGNYEOM CHICKEN</strong></h2>
+                <p>a popular Korean dish known for its crispy, double-fried coating and flavorful, often spicy-sweet sauce</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-11" rel="modal:open">
+                <img src="images/koreandumplings.jpg" alt="koreandumplings" style="width: 300px; height: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-11" class="modal">
+                <h2><strong>MANDU</strong></h2>
+                <p>steamed or fried dumplings filled with a mixture of ground meat, vegetables, and tofu, served with a soy-based dipping sauce</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <!--Clickable Image-->
+                <a href="#image-modal-12" rel="modal:open">
+                <img src="images/bingsu.jpg" alt="bingsu" style="width: 400px; height: 300px; cursor: pointer;"/>
+                </a>
+                <!--Modal Content-->
+                <div id="image-modal-12" class="modal">
+                <h2><strong>BINGSU</strong></h2>
+                <p>a popular Korean shaved ice dessert, consists of sweetened condensed milk, red bean paste, fruits, chewy rice cakes, or ice cream</p>
+                </div>
+            </div>
+
+        </section>
+
+
+    <footer class="footer">
+        <p>Call us at 123-456-789. Search us at www.koreanpalette.com</p>
+        <p>This fictional restaurant project is done at BCIT.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="scripts/index.js"></script>
+    
+</body>
+</html>
+

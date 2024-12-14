@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/SouthKorea.jpg" alt="SouthKorea" />
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            <ul class="nav-list" id="nav-list"></ul>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+
+    <h1>Food & Drink Gallery</h1>
+    <section class="grid gallery">
+        <div class="grid-item">
+            <h2>Serving Meals</h2>
+            <br>
+            <a href="images/servingmeals.jpg" data-lightbox="example-set" data-title="Caption for image 1">
+                <img src="images/servingmeals.jpg" alt="serving meals"
+                    style="width: 500px; height: 500px;  cursor: pointer;">
+            </a>
+        </div>
+    </section>
+    <br>
+
+    <section class="grid gallery">
+        <div class="grid-item">
+            <h2>Appetizers</h2>
+            <br>
+            <a href="images/appetizers.jpg" data-lightbox="example-set" data-title="Caption for image 2">
+                <img src="images/appetizers.jpg" alt="appetizers"
+                    style="width: 500px; height: 500px;  cursor: pointer;">
+            </a>
+        </div>
+    </section>
+    <br>
+
+    <section class="grid gallery">
+        <div class="grid-item">
+            <h2>BBQ Grill</h2>
+            <br>
+            <a href="images/bbqgrill.jpg" data-lightbox="example-set" data-title="Caption for image 3">
+                <img src="images/bbqgrill.jpg" alt="bbq grill" style="width: 500px; height: 500px;  cursor: pointer;">
+            </a>
+        </div>
+    </section>
+    <br>
+
+    <section class="grid gallery">
+        <div class="grid-item">
+            <h2>Sikhye</h2>
+            <br>
+            <a href="images/sikhye.jpg" data-lightbox="example-set" data-title="Caption for image 4">
+                <img src="images/sikhye.jpg" alt="sikhye" style="width: 500px; height: 500px;  cursor: pointer;">
+            </a>
+        </div>
+    </section>
+    <br>
+
+    <section class="grid gallery">
+        <div class="grid-item">
+            <h2>Strawberry Milk Drink</h2>
+            <br>
+            <a href="images/strawberrydrink.jpg" data-lightbox="example-set" data-title="Caption for image 5">
+                <img src="images/strawberrydrink.jpg" alt="strawberry drink"
+                    style="width: 500px; height: 500px;  cursor: pointer;">
+            </a>
+        </div>
+    </section>
+    <br>
+
+
+    <footer class="footer">
+        <p>Call us at 123-456-789. Search us at www.koreanpalette.com</p>
+        <p>This fictional restaurant project is done at BCIT.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="scripts/slick.min.js"></script>    
+    <script src="js/form-validation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+
+
+</body>
+
+</html>
